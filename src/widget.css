@@ -1,0 +1,16 @@
+.overlay-document,.overlay-document body,.overlay-document #app{background:transparent!important;margin:0;overflow:hidden;width:100%;height:100%}
+.overlay-widget{box-sizing:border-box;display:flex;align-items:stretch;justify-content:center;width:100%;height:100%;min-height:0;padding:0;border:0;border-radius:0;white-space:nowrap;line-height:1;font-family:'Segoe UI Variable','Segoe UI','Microsoft YaHei',sans-serif;overflow:hidden;isolation:isolate}
+.overlay-document #app{height:100vh}.overlay-document .overlay-widget{height:100%}
+.widget-metric{flex:0 1 50%;min-height:0;min-width:0;width:100%;display:flex;align-items:center;gap:var(--column-gap,8px);overflow:hidden}
+.widget-label{width:24px;flex:0 0 24px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:2px}.widget-value{width:34px;flex:0 0 34px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums}.widget-cache{color:#c98616;font-size:11px}.widget-countdown{flex:0 0 92px;width:92px;font-size:11px;font-variant-numeric:tabular-nums;text-align:right;overflow:hidden;text-overflow:clip;line-height:16px}
+.overlay-widget progress,.widget-unknown-track,.widget-no-track{flex:1 1 0;min-width:12px;width:0;height:12px;appearance:none;border:0;border-radius:0;overflow:hidden;background:#929ca33b;accent-color:var(--indicator)}
+.overlay-widget progress::-webkit-progress-bar{background:#929ca33b}.overlay-widget progress::-webkit-progress-value{background:var(--indicator)}
+.overlay-widget progress,.widget-unknown-track{mask-image:radial-gradient(ellipse 4.5px 5.5px at 6px 6px,#000 95%,transparent 100%);mask-size:12px 12px;mask-repeat:repeat-x}
+.widget-unknown-track{background:#929ca366}.widget-no-track{background:transparent}.widget-stale progress{opacity:.55}.widget-transparent{background:transparent}.widget-empty{font-size:11px;opacity:.7}
+.overlay-widget.preset-capsule .widget-metric{padding-inline:8px;border-radius:999px;background:color-mix(in srgb,var(--indicator) 11%,transparent)}
+.overlay-widget.preset-bars .widget-metric+.widget-metric{border-top:1px solid #ffffff20}
+.overlay-widget.preset-text .widget-metric{padding-inline:6px;border-bottom:1px solid #ffffff22}
+.overlay-widget.preset-light-glass .widget-metric,.overlay-widget.preset-dark-glass .widget-metric{margin-inline:3px;padding-inline:8px;border:1px solid #ffffff55;border-radius:8px;background:#ffffff58}
+.overlay-widget.preset-dark-glass .widget-metric{border-color:#ffffff22;background:#ffffff0d}
+.overlay-widget.preset-light-solid .widget-metric+.widget-metric{border-top:1px solid #17212b20}
+.overlay-widget.preset-dark-solid .widget-metric+.widget-metric{border-top:1px solid #ffffff20}

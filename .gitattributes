@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.icns binary
+src-tauri/licenses/** -text
+src-tauri/licenses/dependencies/INVENTORY.json text eol=lf

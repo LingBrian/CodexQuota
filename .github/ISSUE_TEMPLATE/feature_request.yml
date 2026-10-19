@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest a focused improvement to CodexQuota.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the user-visible behavior and any relevant alternatives.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Additional context
+    validations:
+      required: false

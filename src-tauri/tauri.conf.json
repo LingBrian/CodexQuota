@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "CodexQuota",
+  "version": "0.0.41",
+  "identifier": "io.codexquota.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: http://asset.localhost data:; connect-src 'self' ipc: http://ipc.localhost; object-src 'none'; frame-src 'none'"
+    },
+    "windows": [
+      {
+        "label": "main",
+        "title": "CodexQuota",
+        "width": 1080,
+        "height": 720,
+        "minWidth": 760,
+        "minHeight": 540
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "externalBin": [
+      "binaries/codex-switch"
+    ],
+    "resources": [
+      "licenses/**/*"
+    ],
+    "targets": [
+      "nsis",
+      "msi"
+    ],
+    "icon": [
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "languages": [
+          "SimpChinese",
+          "English"
+        ],
+        "installerHooks": "windows/hooks.nsh",
+        "displayLanguageSelector": true
+      }
+    }
+  }
+}

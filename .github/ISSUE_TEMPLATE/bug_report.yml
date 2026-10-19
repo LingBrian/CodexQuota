@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a reproducible problem in CodexQuota.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not include account files, access tokens, email addresses, or unredacted diagnostic logs."
+  - type: input
+    id: version
+    attributes:
+      label: CodexQuota version
+      placeholder: v0.0.41
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2, x64
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest set of steps that consistently reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics or screenshots
+      description: Remove account names, local paths, tokens, and other personal data before attaching.
+    validations:
+      required: false

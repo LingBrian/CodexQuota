@@ -1,0 +1,28 @@
+[package]
+name = "codexquota"
+version = "0.0.41"
+edition = "2021"
+license = "MIT"
+
+[lib]
+name = "codexquota_lib"
+crate-type = ["cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-notification = "2"
+thiserror = "2"
+tokio = { version = "1", features = ["process", "time", "sync", "macros", "io-util"] }
+tempfile = "3"
+sha2 = "0.10"
+tauri-plugin-single-instance = "2"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging", "Win32_System_Registry"] }
+windows = { version = "0.62", features = ["Win32_Storage_EnhancedStorage", "Win32_System_Com", "Win32_System_Com_StructuredStorage", "Win32_System_Variant", "Win32_UI_Shell", "Win32_UI_Shell_PropertiesSystem"] }

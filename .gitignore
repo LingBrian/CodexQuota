@@ -1,0 +1,17 @@
+node_modules/
+dist/
+src-tauri/target/
+references/
+.env
+*.key
+*.pem
+auth.json
+**/auth.json
+*.token
+*.cache
+CodexQuota/
+reports/
+*.log
+src-tauri/binaries/
+tools/
+release/
